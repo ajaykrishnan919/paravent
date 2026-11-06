@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [18, 20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Unit tests
+        run: npm test
+      - name: Build
+        run: npm run build
+      - name: Built app is up to date
+        run: git diff --exit-code -- index.html || (echo "index.html is stale. Run 'npm run build' and commit it." && exit 1)
+
+  step-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install OpenCascade bindings
+        run: pip install cadquery-ocp
+      - name: Generate sample STEP files and validate every solid
+        run: npm run validate:step

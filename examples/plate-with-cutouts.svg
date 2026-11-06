@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 90" width="160mm" height="90mm">
+  <!-- Outer outline (largest closed path) becomes the plate. Units are read as millimetres. -->
+  <path d="M0 0 H160 V90 H120 A20 20 0 0 1 80 90 H0 Z" fill="#ccc" stroke="#000"/>
+  <!-- Inner closed paths become fixed cutouts (connector, display window). -->
+  <rect x="20" y="20" width="30" height="15" fill="#fff" stroke="#000"/>
+  <circle cx="130" cy="40" r="10" fill="#fff" stroke="#000"/>
+</svg>

@@ -1,0 +1,257 @@
+{
+  "app": "ParaVent",
+  "version": 2,
+  "params": {
+    "plate": {
+      "shape": "circle",
+      "w": 160,
+      "h": 100,
+      "r": 6,
+      "d": 100,
+      "sides": 6,
+      "rot": 0,
+      "t": 1.2,
+      "custom": null
+    },
+    "layout": {
+      "type": "radial",
+      "pitch": 4,
+      "pitchY": 5.5,
+      "rot": 0,
+      "ox": 0,
+      "oy": 0,
+      "ringStep": 3.6,
+      "center": true,
+      "stagger": true,
+      "seed": 3,
+      "jitter": 0,
+      "jkind": "random",
+      "jscale": 20,
+      "dropout": 0,
+      "jseed": 1
+    },
+    "hole": {
+      "shape": "circle",
+      "sides": 6,
+      "starK": 0.5,
+      "slotW": 0.35,
+      "aspect": 1,
+      "custom": [
+        [
+          -0.38,
+          0.55
+        ],
+        [
+          -0.48,
+          0
+        ],
+        [
+          -0.32,
+          -0.55
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0.32,
+          -0.55
+        ],
+        [
+          0.48,
+          0
+        ],
+        [
+          0.38,
+          0.55
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "fillet": 0,
+      "d": 2.4,
+      "sx": 1,
+      "sy": 1,
+      "rot": 0,
+      "rotMode": "fixed",
+      "jitter": 1,
+      "seed": 7,
+      "spin": 0,
+      "spinBy": "row"
+    },
+    "grad": {
+      "size": {
+        "on": false,
+        "min": 1.2,
+        "max": 4.4,
+        "field": {
+          "type": "radial",
+          "level": 1,
+          "angle": 0,
+          "cx": 0,
+          "cy": 0,
+          "radius": 85,
+          "gamma": 1.2,
+          "invert": true,
+          "base": 0,
+          "controls": [],
+          "noiseScale": 28,
+          "seed": 1,
+          "noise": {
+            "amt": 0,
+            "kind": "random",
+            "scale": 15,
+            "seed": 1
+          }
+        }
+      },
+      "spacing": {
+        "on": false,
+        "min": 0.85,
+        "max": 1.5,
+        "field": {
+          "type": "linear",
+          "level": 1,
+          "angle": 0,
+          "cx": 0,
+          "cy": 0,
+          "radius": 80,
+          "gamma": 1,
+          "invert": false,
+          "base": 0,
+          "controls": [],
+          "noiseScale": 28,
+          "seed": 1,
+          "noise": {
+            "amt": 0,
+            "kind": "random",
+            "scale": 15,
+            "seed": 1
+          }
+        }
+      },
+      "angle": {
+        "on": false,
+        "min": 0,
+        "max": 90,
+        "field": {
+          "type": "linear",
+          "level": 1,
+          "angle": 0,
+          "cx": 0,
+          "cy": 0,
+          "radius": 80,
+          "gamma": 1,
+          "invert": false,
+          "base": 0,
+          "controls": [],
+          "noiseScale": 28,
+          "seed": 1,
+          "noise": {
+            "amt": 0,
+            "kind": "random",
+            "scale": 15,
+            "seed": 1
+          }
+        }
+      },
+      "shape": {
+        "on": false,
+        "min": 0,
+        "max": 1,
+        "steps": 0,
+        "res": 48,
+        "keep": "area",
+        "scaleAt": 0.7,
+        "target": {
+          "shape": "star",
+          "sides": 5,
+          "starK": 0.5,
+          "slotW": 0.35,
+          "aspect": 1,
+          "fillet": 0,
+          "custom": [
+            [
+              -0.38,
+              0.55
+            ],
+            [
+              -0.48,
+              0
+            ],
+            [
+              -0.32,
+              -0.55
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              0.32,
+              -0.55
+            ],
+            [
+              0.48,
+              0
+            ],
+            [
+              0.38,
+              0.55
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "field": {
+          "type": "linear",
+          "level": 1,
+          "angle": 0,
+          "cx": 0,
+          "cy": 0,
+          "radius": 80,
+          "gamma": 1,
+          "invert": false,
+          "base": 0,
+          "controls": [],
+          "noiseScale": 28,
+          "seed": 1,
+          "noise": {
+            "amt": 0,
+            "kind": "random",
+            "scale": 15,
+            "seed": 1
+          }
+        }
+      }
+    },
+    "dfm": {
+      "edge": 6,
+      "web": 0.8,
+      "minFeat": 1,
+      "clip": false
+    },
+    "mounts": {
+      "enabled": true,
+      "mode": "auto",
+      "d": 3.2,
+      "inset": 4.5,
+      "clear": 2,
+      "count": 4,
+      "list": []
+    },
+    "keepouts": [],
+    "regions": [],
+    "edits": {
+      "del": [],
+      "only": []
+    },
+    "view": {
+      "showImg": true
+    }
+  }
+}

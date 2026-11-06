@@ -1,0 +1,8 @@
+node_modules/
+out/
+*.step
+*.dxf
+!examples/**/*.dxf
+.DS_Store
+Thumbs.db
+__pycache__/

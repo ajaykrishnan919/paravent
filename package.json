@@ -1,0 +1,41 @@
+{
+  "name": "paravent",
+  "version": "1.0.0",
+  "description": "Parametric perforation and vent-pattern generator with gradients, shape morphing, G2 fillets, regions, manufacturability checks and solid STEP / DXF / SVG export.",
+  "license": "Apache-2.0",
+  "author": "Ajay Krishnan A",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajaykrishnan919/paravent.git"
+  },
+  "keywords": [
+    "perforation",
+    "vent",
+    "speaker-grille",
+    "parametric",
+    "step",
+    "dxf",
+    "svg",
+    "cad",
+    "laser-cutting",
+    "cnc",
+    "generative-design"
+  ],
+  "main": "src/core.js",
+  "files": [
+    "src",
+    "index.html",
+    "LICENSE",
+    "NOTICE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/core.test.mjs",
+    "samples": "node scripts/make-samples.mjs out",
+    "validate:step": "node scripts/make-samples.mjs out && python3 test/validate_step.py out"
+  }
+}
